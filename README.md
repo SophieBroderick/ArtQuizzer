@@ -1,7 +1,7 @@
-## Artquizzer: [Try it out](https://artquizzer.com)
+## Artquizzer: [Try it now](https://artquizzer.com)
 Info-cards are categorized by unit based on the AP Art History curiculum:
 
-![ArtQuizzer_HomePhone](https://github.com/SophieBroderick/ArtQuizzer/assets/71468832/d196092b-262e-4a5c-b77b-10fcfb35c420)
+![ArtQuizzer_HomePhone](https://github.com/SophieBroderick/ArtQuizzer/assets/71468832/31f3fc44-f6bc-4685-8236-da864e6e02c9)
 
 Fill out info-cards based on the image and get the answer once you submit:
 
