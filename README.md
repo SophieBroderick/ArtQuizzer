@@ -1,4 +1,4 @@
-## Artquizzer
+## Artquizzer: [Try it out](https://artquizzer.com)
 Info-cards are categorized by unit based on the AP Art History curiculum:
 
 ![ArtQuizzer_HomePhone](https://github.com/SophieBroderick/ArtQuizzer/assets/71468832/d196092b-262e-4a5c-b77b-10fcfb35c420)
@@ -11,8 +11,6 @@ Click on Missed Items to revise ONLY the info-cards you missed:
 
 ![ArtQuizzerMissed-Phone](https://github.com/SophieBroderick/ArtQuizzer/assets/71468832/12514b72-cc87-4f49-adc3-f35dc9aa6c6a)
 
-
-## Try it out [now](https://artquizzer.com)
 
 ## Awards
 - Used in several school districts by hundreds of students!
