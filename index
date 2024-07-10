@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <title>Art Quizzer</title>
+        <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css">
+        <link rel="stylesheet" href="css/theme-classic.css">
+        <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js"></script>
+        <style>
+        </style>
+    </head>
+    <body>
+      <span id="center-narrow" class="ui-mobile-viewport ui-overlay-a">
+        <div data-role="header">
+            <h1>Art Quizzer</h1>
+            <div id="displayEmail" style="text-align:center;font-size:.7em;color:#6facd5;padding-bottom: 6px;margin-top: -6px;"></div>
+            <div data-role="navbar">
+                <ul>
+                    <li><a id="viewCat" href="#" class="ui-btn-active ui-state-persist">By Category</a></li>
+                    <li><a id="viewAll" href="#">All Catagories</a></li>
+                    <li><a id="viewMissed" href="#">Missed Items</a></li>
+                </ul>
+            </div>
+            <a id="email" href="#" data-icon="grid" data-iconpos="notext" data-rel="dialog" data-transition="fade" class="ui-btn-right ui-btn ui-shadow ui-btn-corner-all ui-btn-icon-notext ui-btn-up-f" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="f" title=""><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">&nbsp;</span><span class="ui-icon ui-icon-grid ui-icon-shadow">@</span></span></a>
+        </div>
+        
+        <div id="content" role="main" class="ui-content jqm-content">
+            <form class="content-center ui-mini">
+                <div class="content-revert ui-field-contain" id="theme-selector">
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                      <div id="view-cat">
+                        <div class="ui-grid-c">
+                            <div class="ui-block-c"><a class="ui-shadow ui-btn ui-corner-all cat">Category <div class="cat-number">1</div>Prehistory</a></div>
+                            <div class="ui-block-b"></div>
+                            <div class="ui-block-c"><a class="ui-shadow ui-btn ui-corner-all cat">Category <div class="cat-number">2</div>Ancient<br />Mediterranean</a></div>
+                        </div>
+                        <div class="ui-grid-c" style="margin-top:15px;">
+                            <div class="ui-block-c"><a class="ui-shadow ui-btn ui-corner-all cat">Category <div class="cat-number">3</div>Early Europe</a></div>
+                            <div class="ui-block-b"></div>
+                            <div class="ui-block-c"><a class="ui-shadow ui-btn ui-corner-all cat">Category <div class="cat-number">4</div>Later Europe</a></div>
+                        </div>
+                        <div class="ui-grid-c" style="margin-top:15px;">
+                            <div class="ui-block-c"><a class="ui-shadow ui-btn ui-corner-all cat">Category <div class="cat-number">5</div>Indigenous<br />Americas</a></div>
+                            <div class="ui-block-b"></div>
+                            <div class="ui-block-c"><a class="ui-shadow ui-btn ui-corner-all cat">Category <div class="cat-number">6</div>Africa</a></div>
+                        </div>
+                        <div class="ui-grid-c" style="margin-top:15px;">
+                            <div class="ui-block-c"><a class="ui-shadow ui-btn ui-corner-all cat">Category <div class="cat-number">7</div>West Asia</a></div>
+                            <div class="ui-block-b"></div>
+                            <div class="ui-block-c"><a class="ui-shadow ui-btn ui-corner-all cat">Category <div class="cat-number">8</div>East Asia</a></div>
+                        </div>
+                        <div class="ui-grid-c" style="margin-top:15px;">
+                            <div class="ui-block-c"><a class="ui-shadow ui-btn ui-corner-all cat">Category <div class="cat-number">9</div>The Pacific</a></div>
+                            <div class="ui-block-b"></div>
+                            <div class="ui-block-c"><a class="ui-shadow ui-btn ui-corner-all cat">Category <div class="cat-number">10</div>Contemporary</a></div>
+                        </div>
+                      </div>
+                      <div id="view-item"></div>
+                      <div id="view-perfect"><h2>You don't have any items you've missed!</h2></div>
+                    </fieldset>
+                </div>
+            </form>
+        </div>
+        </span>
+
+        <!-- Analytics -->
+        <script async src="//static.getclicky.com/101331985.js"></script>
+        <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101331985ns.gif" /></p></noscript>
+
+        <script src="js/data.js"></script>
+        <script>
+          var currentID = 0;
+          var currentMenu = 0;
+          $(function() {
+            $('.ui-page-theme-a').css('background-image', 'url(bkgd.png)'); 
+            function showEmail() { if ($('#displayEmail').html() == '') $('#displayEmail').html('sophie' + 'broderick' + '@' + 'gmail.com'); else $('#displayEmail').html(''); }
+            function menuSelect(menu) {
+                currentMenu = menu;
+                if (menu > 0) set = getByArea(currentMenu);
+                else {
+                    if (menu == 0) set = getAll();
+                    else set = getByMissed();
+                }
+            }
+            function getNext() {
+                if (currentID > 0) delete set[currentID];
+                if (Object.keys(set).length == 0) menuSelect(currentMenu);
+                if (Object.keys(set).length == 0 && currentMenu < 0) {
+                    $('#view-item').html('');
+                    $('#view-perfect').show();
+                } else {
+                    currentID = Object.keys(set)[getRandomInt(Object.keys(set).length)];
+                    $('#view-item').html(template(currentID)).trigger("create");
+                }
+            }
+                    
+			$("#viewCat").on("click", function(event) {
+                $("#view-cat").show();
+                $("#view-item").hide();
+                $('#view-perfect').hide();
+			});
+			$("#viewAll").on("click", function(event) {
+                currentID = 0;
+                menuSelect(0);
+                getNext();
+                $("#view-item").show();
+                $("#view-cat").hide();
+                $('#view-perfect').hide();
+			});
+			$("#viewMissed").on("click", function(event) {
+                currentID = 0;
+                menuSelect(-1);
+                getNext();
+                $("#view-item").show();
+                $("#view-cat").hide();
+			});
+			$(".cat").on("click", function(event) {
+                currentID = 0;
+                menuSelect(parseInt($(this).find('.cat-number').html()))
+                getNext();
+                $("#view-item").show();
+                $("#view-cat").hide();
+			});
+            $("body").delegate("#check", "click", function(event) {
+                $("#toCheck").hide();
+                $("#correct").css("display", "flex");
+                $('#third-area').css('margin-top', '10px');
+                var dateCorrect = (parseInt('0' + $('#date option:selected')[0].value) == 1);
+                
+                // Incorrect answer -------------------------------
+                if (!(checkAnswer(currentID, $('#title').val(), $('#third').val()) && dateCorrect)) {
+                    addToMissed(currentID);
+                    $('#star').hide();
+                    $('#wrong').show();
+                    if (!checkString(data[currentID].answer.title, $('#title').val())) $('#title').addClass('wrong');
+                    if (!dateCorrect) $('#date-area').html('<label class="lbl" for="date">Date</label> <div id="date" name="date" class="wrong" style="padding:7px;"></div>');
+                    if (!checkThirdAnswer(currentID, $('#third').val())) {
+                        $('#third').addClass('wrong');
+                    }
+                } else {
+                    removeFromMissed(currentID);
+                    $('#date').html('<option>' + data[currentID].date + '</option>')
+                }
+                $('#title').val(data[currentID].title);
+                $('#date').html('<option>' + data[currentID].date + '</option>')
+                if (data[currentID].testOn == 'Location') $('#third').val(data[currentID].location);
+                if (data[currentID].testOn == 'Artist') $('#third').val(data[currentID].artist);
+                if (data[currentID].testOn == 'Material') $('#third').val(data[currentID].materials);
+                if (data[currentID].testOn == 'Culture') $('#third').val(data[currentID].culture);
+			});
+            $("body").delegate("#next", "click", getNext);
+            $("body").delegate("#email", "click", showEmail);
+          });
+        </script>
+    </body>
+</html>
