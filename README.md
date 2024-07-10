@@ -9,7 +9,8 @@ Fill out info-cards based on the image and get the answer once you submit:
 
 Click on Missed Items to revise ONLY the info-cards you missed:
 
-![ArtQuizzerMissed-Phone](https://github.com/SophieBroderick/ArtQuizzer/assets/71468832/7aad6e44-092f-485c-8858-7970232eadf4)
+![ArtQuizzerMissed-Phone](https://github.com/SophieBroderick/ArtQuizzer/assets/71468832/12514b72-cc87-4f49-adc3-f35dc9aa6c6a)
+
 
 ## Try it out [now](https://artquizzer.com)
 
