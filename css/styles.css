@@ -1,0 +1,52 @@
+.content-center {
+    text-align: center;
+    margin: auto;
+    left: 50%;
+}
+.answer-area {
+    text-align: left;
+}
+.noshadow * {
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
+.nogradient,
+.nogradient * {
+    background-image: none !important;
+}
+.nohighlight .ui-btn:before {
+    display: none !important;
+}
+form.ui-mini .ui-field-contain fieldset.ui-controlgroup legend small {
+    color: #666;
+}
+.cat { width:120px; height:98px; padding-top:30px; }
+.cat-number { font-size:1.4em; padding:9px; }
+.ui-content { padding:0; }
+.ui-input-text { width:360px; }
+.ui-select { width:360px; }
+.ui-mobile label { font-size: 1.2em; }
+#view-cat { margin-left: 20px; width: 340px; }
+#view-item { display: none; }
+#viewMissed { min-width: 110px; }
+.item-btn { width:200px; margin-left:160px; }
+#correct { display: none; }
+#wrong { display: none; flex: 1; width: 120px; margin-right: 30px; }
+#star { flex: 1; width: 120px; margin-right: 30px; }
+#next { width: 120px; }
+
+@media screen and (min-width: 400px) { 
+    #wrong { width: 160px; } 
+    #star  { width: 160px; } 
+}
+.wrong { background-color: #f44 !important; }
+#view-perfect { display: none; }
+#center-narrow { 
+    width: 380px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.ui-block-b { width: 120px !important; }
+.ui-block-c { width: 60px !important; }
