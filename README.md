@@ -1,7 +1,7 @@
 ## Artquizzer
 Info-cards are categorized by unit based on the AP Art History curiculum:
 
-![ArtQuizzer_HomePhone](https://github.com/SophieBroderick/ArtQuizzer/assets/71468832/56c32761-24c8-4aba-8f4d-5376d337d276 width="100")
+![ArtQuizzer_HomePhone](https://github.com/SophieBroderick/ArtQuizzer/assets/71468832/56c32761-24c8-4aba-8f4d-5376d337d276)
 
 Fill out info-cards based on the image and get the answer once you submit:
 
