@@ -1,10 +1,12 @@
 ## Artquizzer
 Info-cards are categorized by unit based on the AP Art History curiculum
-![ArtQuizzer_Home](https://github.com/SophieBroderick/ArtQuizzer/assets/71468832/f2fffa71-666c-46f8-af68-2d258ff39094)
+![ArtQuizzer_HomePhone](https://github.com/SophieBroderick/ArtQuizzer/assets/71468832/56c32761-24c8-4aba-8f4d-5376d337d276 | width=100)
+
 Fill out info-cards based on the image and get the answer once you submit
-![ArtQuizzerQuiz](https://github.com/SophieBroderick/ArtQuizzer/assets/71468832/007df480-66f5-43a3-9985-96a0e2a2366d)
+![ArtQuizzerQuiz-Phone](https://github.com/SophieBroderick/ArtQuizzer/assets/71468832/9cd91069-4a78-476d-9efb-8ed8fa6f64db | width=100)
+
 Click on Missed Items to revise ONLY the info-cards you missed
-![ArtQuizzerMissed](https://github.com/SophieBroderick/ArtQuizzer/assets/71468832/7602e116-01b9-4dd6-95e7-755bc9410c15)
+![ArtQuizzerMissed-Phone](https://github.com/SophieBroderick/ArtQuizzer/assets/71468832/7aad6e44-092f-485c-8858-7970232eadf4 | width=100)
 
 ## Try it out [now](https://artquizzer.com)
 
