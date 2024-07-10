@@ -1,4 +1,9 @@
 ## Artquizzer: [Try it now](https://artquizzer.com)
+
+| Info-cards are categorized by unit based on the AP Art History curiculum | Fill out info-cards based on the image and get the answer once you submit  | Click on Missed Items to revise ONLY the info-cards you missed   |
+| :------------: | :------------: | :------------: |
+| [ArtQuizzer_HomePhone](https://github.com/SophieBroderick/ArtQuizzer/assets/71468832/31f3fc44-f6bc-4685-8236-da864e6e02c9) | [ArtQuizzerQuiz-Phone](https://github.com/SophieBroderick/ArtQuizzer/assets/71468832/9cd91069-4a78-476d-9efb-8ed8fa6f64db)  | [ArtQuizzerMissed-Phone](https://github.com/SophieBroderick/ArtQuizzer/assets/71468832/12514b72-cc87-4f49-adc3-f35dc9aa6c6a)   |
+
 Info-cards are categorized by unit based on the AP Art History curiculum:
 
 ![ArtQuizzer_HomePhone](https://github.com/SophieBroderick/ArtQuizzer/assets/71468832/31f3fc44-f6bc-4685-8236-da864e6e02c9)
