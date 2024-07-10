@@ -4,8 +4,7 @@
 | :------------: | :------------: | :------------: |
 | ![ArtQuizzer_HomePhone](https://github.com/SophieBroderick/ArtQuizzer/assets/71468832/31f3fc44-f6bc-4685-8236-da864e6e02c9) | ![ArtQuizzerQuiz-Phone](https://github.com/SophieBroderick/ArtQuizzer/assets/71468832/9cd91069-4a78-476d-9efb-8ed8fa6f64db)  | ![ArtQuizzerMissed-Phone](https://github.com/SophieBroderick/ArtQuizzer/assets/71468832/12514b72-cc87-4f49-adc3-f35dc9aa6c6a)   |
 
-## Updates
-- Used in several school districts by hundreds of students!
+## Awards
 - [Winner of the 2021 Congressional App Challenge](https://simpson.house.gov/kids/congressional-app-challenge.htm)
 
 ## Background
